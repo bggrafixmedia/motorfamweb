@@ -760,10 +760,7 @@
            }
 
                 @media screen and (max-width:568px){
-                    body{
-                        background-position: left;
-                    }
-
+                    
                     nav{display:none;}
 
                     .navigation{
