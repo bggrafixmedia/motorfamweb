@@ -867,6 +867,15 @@
                         display:none;
                         
                     }
+                            
+            body{
+                background:url(hbev.png);
+                background-size:cover;
+                background-position-y: bottom;
+            background-position-x: right;
+                background-repeat: no-repeat;
+            }
+            
 
 
                 }
