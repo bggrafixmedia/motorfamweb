@@ -823,11 +823,11 @@
                     }
 
                     .feature .flexabout {
-                        margin:50px 50px;
+                        margin:50px 30px;
                     }
 
                     .feature .featurebox2 {
-                        margin:50px 50px;
+                        margin:50px 30px;
                     }
 
                   
@@ -839,7 +839,7 @@
                     }
 
                     .feature .featurebox{
-                        margin:50px 50px;
+                        margin:50px 30px;
                         background-size:190%;
                         background-repeat: no-repeat;
                         background-position-y: bottom;
@@ -856,5 +856,13 @@
                         display:none;
                         
                     }
+                            
+         
+                        
+                       .herowrapper .textbox p{
+                        display:none;
+                        
+                    }
+
 
                 }
