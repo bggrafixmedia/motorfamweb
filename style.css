@@ -866,7 +866,7 @@
                     }
                             
             body{
-                background:url(hbev.png);
+                background-image:url(hbev.png);
                 background-size:cover;
                 background-position-y: bottom;
             background-position-x: right;
