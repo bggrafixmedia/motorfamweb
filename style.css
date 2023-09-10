@@ -101,7 +101,6 @@
                 background-repeat: no-repeat;
                 height:100vh;
                 scroll-behavior: smooth;
-               background-color: black;
                 
             }
             
@@ -866,11 +865,11 @@
                     }
                             
             body{
-            background-color: black;
-                background-image:url(hbev.png);
+            
+                background-image:url(motorfam.gif);
                 background-size:cover;
                 background-position-y: bottom;
-            background-position-x: right;
+                background-position-x: right;
                 background-repeat: no-repeat;
             }
             
