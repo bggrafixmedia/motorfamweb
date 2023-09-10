@@ -101,6 +101,7 @@
                 background-repeat: no-repeat;
                 height:100vh;
                 scroll-behavior: smooth;
+                        background:white;
                 
             }
             
@@ -863,15 +864,6 @@
                         display:none;
                         
                     }
-                            
-            body{
-            
-                background-image:url(motorfam.gif);
-                background-size:cover;
-                background-position-y: bottom;
-                background-position-x: right;
-                background-repeat: no-repeat;
-            }
             
 
 
