@@ -9,7 +9,8 @@
             <script src="lib/themify-icons/jquery-3.4.1.js"></script>
         </head>
         <body>
-
+           
+            
            <div class="navigation">
             <div class="logo"><a href="webha.html"><img src="logo m.png"></a></div>
             <nav>
@@ -19,9 +20,18 @@
                 <a href="">Car</a>
                 <a href="">Blog</a>
                 <button class="orderbtn">Contact us</button>
+                
             </nav>
+            <div class="mobilenav">
+                <button class="displayContact" onclick="displayDropDown()"><i class="ti-car" aria-hidden="true"></i></button>
+                <button class="displayDropDown" onclick="displayDropDown()"><i class="ti-menu" aria-hidden="true"></i></button>
+            </div>
            </div>
 
+          
+
+            
+           
 
 
 
@@ -39,7 +49,9 @@
                     </p>
                     <a href="#main">Explore Now &nbsp; <i class="ti-arrow-right" aria-hidden="true"></i> </a>
             </div>
+            
 
+            
 
             <div class="imagebox">
                 <img src="motorfam img.png" alt="">
@@ -286,6 +298,43 @@
             
 
 
+        <div class="overlaymobile2" id="overlaymenu" onclick="vanishdrop()">
+            <div class="mobilenav" style="position:absolute;top:30px;left:80%;background: none;color:white">
+                <button class="displayDropDown" onclick="displayDropDown()"><i class="ti-close" aria-hidden="true"></i></button>
+            </div>  
+        </div>
+
+        <div class="overlaymobile" id="overlaymenu2" onclick="vanishdrop()">
+            
+        </div>
+
+        <div class="mobilenavcontent" id="menudrop">
+
+            <div class="home">
+                <div class="icons2"><i class="ti-home" aria-hidden="true"></i></div>
+                <div class="menutext"><a>Home</a><p>Go to Home Page</p></div>
+            </div>
+
+            <div class="about">
+                <div class="icons2"><i class="ti-tag" aria-hidden="true"></i></div>
+                <div class="menutext"><a>About</a><p>Know more about us</p></div>
+            </div>
+
+            <div class="services">
+                <div class="icons2"><i class="ti-package" aria-hidden="true"></i></div>
+                <div class="menutext"><a>Services</a><p>What we have for you</p></div>
+            </div>
+
+            <div class="cars">
+                <div class="icons2"><i class="ti-car" aria-hidden="true"></i></div>
+                <div class="menutext"><a>Cars</a><p>Explore our inventory</p></div>
+            </div>
+
+            <div class="blog">
+                <div class="icons2"><i class="ti-notepad" aria-hidden="true"></i></div>
+                <div class="menutext"><a>Blog</a><p>Informations to help you</p></div>
+            </div>
+        </div>
 
             <footer class="footer py-3">
                 <div class="container">
@@ -294,7 +343,23 @@
                     </p>
                 </div>
             </footer>
+
+
 <script>
+
+    function displayDropDown(){
+        document.getElementById("overlaymenu").style.display="block";
+        document.getElementById("overlaymenu2").style.display="block";
+        document.getElementById("menudrop").style.display="flex";
+        
+    };
+
+    function vanishdrop(){
+        document.getElementById("menudrop").style.display="none";
+        document.getElementById("overlaymenu").style.display="none";
+        document.getElementById("overlaymenu2").style.display="none";
+    };
+
     var typed = new Typed ('#herotext', {
         strings:["","Sold out more than 80 vehicles to our Happy Clients in 2023","Made big deals with top professionals in different countries","We Partner with top Experts in the automotive industry to provide best customer services",],
         typeSpeed:30,
