@@ -1103,6 +1103,8 @@
                         display:block;
         
                     }*/
+
+                            *{overflow-x: hidden}
                     
 
                 }
