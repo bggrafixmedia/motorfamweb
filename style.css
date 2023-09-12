@@ -1076,6 +1076,8 @@
                     .mobilenav{
                         display:block;
                     }
+                             .content{overflow-x:hidden}
+
                     
                     /*
                     .mobilenavcontent{
