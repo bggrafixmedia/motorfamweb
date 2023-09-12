@@ -12,7 +12,8 @@
             body::-webkit-scrollbar{
                 width:10px;
             }
-            
+
+*{overflow-x: hidden}
             
             .animation {
                 opacity: 0;
