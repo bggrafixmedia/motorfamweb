@@ -13,7 +13,7 @@
                 width:10px;
             }
 
-*{overflow-x: hidden}
+
             
             .animation {
                 opacity: 0;
@@ -103,7 +103,8 @@
                 height:100vh;
                 scroll-behavior: smooth;
                
-                
+                width:100vw;
+            overflow-x: hidden;
             }
             
             
@@ -113,7 +114,7 @@
                 position:relative;
                 z-index:9999;
                 margin-top:65vh;
-                
+                overflow-x: hidden;
             }
 
 
@@ -123,7 +124,7 @@
                 z-index:9999;
                 margin-top:-80px;
                 margin-left: 0px;
-                
+                overflow-x: hidden;
             }
 
             .feature{
@@ -997,6 +998,7 @@
                     .aboutsection{
                         margin-top:-30px;
                         padding:0px;
+                        overflow-x: hidden;
                     }
 
                     .herowrapper .imagebox, 
@@ -1105,7 +1107,7 @@
         
                     }*/
 
-                            *{overflow-x: hidden}
+                            
                     
 
                 }
