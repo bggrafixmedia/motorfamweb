@@ -974,6 +974,7 @@
 
                     body{
                         background-position: left;
+                                overflow-x: hidden;
                     }
 
                     nav{display:none;}
