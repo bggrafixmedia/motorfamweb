@@ -964,6 +964,9 @@
                         background-repeat: no-repeat;
                         height:100vh;
                         scroll-behavior: smooth;
+                        width:100vw;
+                        margin:0px;
+                        overflow-x: hidden;
                        
                         
                     }
@@ -1078,6 +1081,7 @@
                         display:block;
                     }
                              .content{overflow-x:hidden}
+                            .content2{overflow-x: hidden}
 
                     
                     /*
