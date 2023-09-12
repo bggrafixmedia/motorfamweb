@@ -1,3 +1,4 @@
+/*css*/
             body::-webkit-scrollbar-thumb{
                 background-image:linear-gradient(to bottom, #d70000, #7f0000);
                 border-radius: 5px;
@@ -513,6 +514,24 @@
                 }
             }
 
+         @keyframes key2r {
+               0%{
+                   transform:translateX(200px);opacity:0;
+               }
+
+               25%{
+                   transform:translateX(0px)
+               }
+
+               50%{
+                   transform:translateX(0px)
+               }
+
+               100%{
+                   transform:translateX(0px); opacity:1;
+               }
+           }
+
 
             @keyframes key3 {
                 0%{
@@ -895,6 +914,12 @@
 
             .mobilenavcontent .home, .services, .about, .cars, .blog{
                 
+              animation-name:key2;
+              animation-iteration-count:1;
+              animation-duration: 5s;
+              animation-direction:alternate;
+              animation-fill-mode: forwards;
+              animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 2);
               
                 flex:100%;
                 display:inline-flex;
@@ -908,10 +933,33 @@
                 cursor: pointer;
                 transition:all 0.9s ease;
                     
-                
+                opacity:0;
                 
 
             }
+            
+             .mobilenavcontent .home, .about, .blog{
+             
+             animation-name:key2r;
+             animation-fill-mode:forwards;
+             }
+             
+              .mobilenavcontent .about{
+              animation-delay:0.5s;
+              }
+              
+               .mobilenavcontent .services{
+               animation-delay:1s;
+               }
+               
+               .mobilenavcontent .cars{
+               animation-delay:1.5s;
+               }
+               
+               .mobilenavcontent .blog{
+               animation-delay:2s;
+               }
+               
 
             .mobilenavcontent .home:hover, .services:hover, .about:hover, .cars:hover, .blog:hover {
                 background-color:rgba(153, 0, 0, 0.685)
@@ -966,9 +1014,10 @@
                         background-repeat: no-repeat;
                         height:100vh;
                         scroll-behavior: smooth;
-                        width:100vw;
+                        width:100%;
                         margin:0px;
                         overflow-x: hidden;
+                        
                        
                         
                     }
@@ -985,20 +1034,21 @@
                     nav{display:none;}
 
                     .navigation{
-                        padding:35px 50px;
-                      
+                        padding:40px 30px;
+                      overflow-x:hidden;
                         
                     }
 
                     .aboutsection .flexabout{
                         margin-top:-30px;
                         padding:0px;
+                        
                     }
 
                     .aboutsection{
                         margin-top:-30px;
                         padding:0px;
-                        overflow-x: hidden;
+                        
                     }
 
                     .herowrapper .imagebox, 
@@ -1008,14 +1058,17 @@
                     .featuresection .flexabout .secondflex2{
                         flex:100%;
                         width:100%;
+                        
                     }
 
 
                     .feature .featurebox2 .secondflex{
                         margin-bottom:50px;
+                        
                     }
                     .herowrapper .imagebox img{
-                        display:none
+                        display:none;
+                        
                     }
 
                     .herowrapper .textbox, 
@@ -1024,6 +1077,7 @@
                     .feature .featurebox2 .secondflex{
                         flex:100%;
                         width:100%;
+                        
                     }
 
                     .herowrapper{
@@ -1033,21 +1087,25 @@
                         -ms-display:flex;
                         -ms-flex-wrap:wrap;
                         flex-direction: row;
-                        margin:50px 50px;
+                        margin:50px 30px;
+                        
                        
                     }
 
 
                     .aboutsection .flexabout{
                         margin:50px 30px;
+                        
                     }
 
                     .feature .flexabout {
                         margin:50px 30px;
+                        overflow-x:hidden;
                     }
 
                     .feature .featurebox2 {
                         margin:50px 30px;
+                        overflow-x:hidden;
                     }
 
                     .headerpr,.headerpr1{
@@ -1058,6 +1116,7 @@
                     .feature .featurebox2 .secondflex {
                         padding:40px 40px;
                         padding-bottom:180px;
+                        overflow-x:hidden;
                     }
 
                     .feature .featurebox{
@@ -1068,6 +1127,7 @@
                         background-position-x: right;
                         padding:40px 40px;
                         padding-bottom:180px;
+                        
                     }
 
                     .feature .featurebox p{
@@ -1083,8 +1143,10 @@
                     .mobilenav{
                         display:block;
                     }
-                             .content{overflow-x:hidden}
-                            .content2{overflow-x: hidden}
+                    
+                    
+                   .content{overflow-x:hidden;}
+                   
 
                     
                     /*
@@ -1110,4 +1172,4 @@
                             
                     
 
-                }
+}
